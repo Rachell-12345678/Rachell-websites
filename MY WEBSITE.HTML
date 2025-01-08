@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Story Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:turquoise;
+            color: #333;
+        }
+
+        header {
+            background-color:azure;
+            color:black;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color:blueviolet;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        nav a:hover {
+            background-color: silver;
+            color: black;
+        }
+
+        nav #active {
+            background-color: black;
+            color: white;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        p {
+            background-color:turquoise;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size:1 1rem;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="HOME PAGE.HTML">Home</a>
+        <a href="Me and my family.HTML">Me and My Family</a>
+        <a href="My Educational background.HTML">My Educational Background</a>
+        <a href="MY website.HTML" id="active">MY Website</a>
+        <a href="CONTACT ME.HTML">Contact Me</a>
+    </nav>
+   <h4><p><q>This website helps me share my story and reflect on my experiences from the past 23 years.<br>
+     Its goal is to inspire others to share their own journeys by illustrating how I navigated mine.<br>
+      I am passionate about writing and sharing personal experiences, as well as helping others understand their backgrounds to envision their futures.<br>
+       I would greatly appreciate any suggestions on how to make my website more engaging and helpful for others.
+    </q></p></h4> 
+    <pre> 
+      <mark><b><q>Please rate my website using the button below.</q></b></mark> <br>
+      </pre> 
+        <form>
+     <label for="Exellent">Exellent</label>
+     <input type="radio" name="rate" value="Exellent" id="Exellent">
+     <labe for="VeryGood">VeryGood</label>
+     <input type="radio" name="rate" value="VeryGood" id="VeryGood">
+     <labe for="Good">Good</label>
+     <input type="radio" name="rate" value="Good" id="Good">
+     <labe for="Bad">Bad</label>
+     <input type="radio" name="rate" value="Bad" id="Bad"><br>
+        <br><b> <button class="button" onclick="hey()">submit</button></b>
+    </form>
+ </body>
+ <script>
+    function hey() {
+        alert("Thank you")
+    }
+</script>
+</html>

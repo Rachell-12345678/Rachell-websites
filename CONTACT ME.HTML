@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Story Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: turquoise;
+            color: #333;
+        }
+
+        header {
+            background-color: azure;
+            color:black;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color:blueviolet;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        nav a:hover {
+            background-color: silver;
+            color: black;
+        }
+
+        nav #active {
+            background-color: black;
+            color: white;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color:blueviolet;
+            color: black;
+            text-align: center;
+            padding: Orem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h3 {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        p {
+            background-color: turquoise;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size:1 1rem;
+            line-height: 1.5;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form textarea {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            width: 50%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"], form input[type="reset"] {
+            width: 100px;
+            background-color:blueviolet;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover, form input[type="reset"]:hover {
+            background-color: silver;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="HOME PAGE.HTML" >Home</a>
+        <a href="Me and my family.HTML">Me and My Family</a>
+        <a href="My Educational background.HTML">My Educational Background</a>
+        <a href="MY website.HTML">MY Website</a>
+        <a href="CONTACT ME.HTML"id="active">Contact Me</a>
+    </nav>
+    <center>
+        <h1><B><U><i>CONTACT ME</i></U></B></h1>
+        <h3>NAME:RAHEL SAHLE </h3>
+        <H3>PHONE NUMBER:0932326819</H3>
+        <h3>Id NUMBER:UGR/178441/12</h3>
+        <H3>TELEGRAM:@ONLYMERACHEL</H3>
+        <H3>ADDRESS:MEKELLE</H3>
+        <HR/>
+        <form name="commment_form" method="post">
+            <labe>FUll Name</labe>
+            <input type="text" name="FULL NAME"></br>
+            <label>EMAIL</label>
+            <input type="email" name="EMAIL"></form></br>
+            <label>COMMENT</label><BR>
+            <textarea name="comment" row="19", cols="20">your comment please</textarea><BR>
+        <button class="button" onclick="hello()">SEND COMMENT</button> <br>
+       <button class="button" onclick="hellothere()">RESET</button>
+    
+    </form>
+            </center>
+   <footer>
+    &copy; 2025 My Personal Story Website. Thank you!
+</footer>
+</body>
+<script>
+function hello() {
+    alert("sent")   
+}
+function hellothere() {
+    alert("Try Again")
+}
+</script>
+</html>
